@@ -3,14 +3,16 @@ services:
   - type: web
     name: Ngrok
     env: docker
-    repo: https://github.com/AkashiCoin/Railway-Ngrok.git # optional
+    repo: https://github.com/AlexWJT/Railway-Ngrok.git # optional
     region: Singapore # optional (defaults to oregon)
     plan: free # optional (defaults to starter)
     healthCheckPath: /
     envVars:
       - key: PORT
-        value: 80
+        value: 7001
       - key: NGROK_TOKEN
         sync: false
+        value: 2PWBDnzSdHtLLrJQ0IbjZW2tAJE_6s6xpPZtLEtTFkR1d5T9y
       - key: REGION
         sync: false
+        value: us
